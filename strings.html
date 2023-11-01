@@ -1,0 +1,54 @@
+<!-- DOCTYPE html tells browser that page is HTML5 -->
+<!DOCTYPE html>
+<!-- html lang sets the language for the page (en = english) -->
+<html lang="en">
+<!-- head is for browser and search engine -->
+<head>
+    <!-- charset="UTF-8" allows for use of every character for all languages -->
+    <meta charset="UTF-8">
+    <!-- Keep tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This will appear in browser tab -->
+    <title>CSC102 Homepage</title>
+    <!-- This links my validation js file to my strings page-->
+    <script src= "validateInput.js"></script>
+    <!--Add a link to CSS file-->
+    <link rel="stylesheet" href="main.css">
+</head>
+<!-- All page content goes here -->
+<body> 
+    <!-- Add H1 for header. Only 1 H1 can be entered per page -->
+    <header><h1>Mike Maassen CSC102 Strings Page</h1></header>
+    <!--This is a descriptor for my navigation page-->
+    <h2>Navigation</h2>
+    <nav>
+    <!--The following two lines are links to my index, boards and game pages-->
+    <a href="./index.html">Home</a>
+    <br>
+    <a href="./boards.html">Boards</a>
+    <br>
+    <a href="./game.html">Game</a>
+    <br>
+    </nav>  
+    <form id="myForm">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id= "fname"><br><br>
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id= "lname"><br><br>
+        
+        <label for="zip">Zip Code:</label>
+        <input type="text" name="zip" id= "zip"><br><br>
+        
+        <button>Submit</button>
+
+    </form> 
+    <!-- The footer allows me to put my name and the schools address at the bottom of my page -->
+    <footer>Mike Maassen<br>
+    University of Advancing Technology<br>
+    2625 W Baseline Rd<br> 
+    Tempe, AZ 85283<br>
+    "Who dares wins."<br>
+    </footer>
+</body>
+</html>
