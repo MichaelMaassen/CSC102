@@ -1,3 +1,37 @@
+// This class is created to demonstrate inheritance
+class polygon {
+    constructor (sides) {
+        this.sides = sides;
+
+    }
+
+    alertSides(){
+        alert("this polygon has" + this.sides);
+    }
+
+    alertFormula(){
+        alert("The area of this object is")
+    }
+}
+
+class square extends polygon{
+    constructor (length){
+//Super refers to the parent of this child class
+        super(4);
+        this.length = length;
+    }
+
+    area(){
+        alert(this.length * this.length);
+    
+    }
+
+    alertFormula(){
+        super.alertFormula();
+        alert("...length squared")
+    }
+}
+
 function validateInput(){
     event.preventDefault();
     let firstName = document.getElementById("fname").value;
@@ -31,4 +65,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
     if(form) {
        form.addEventListener("submit", validateInput); 
     }
+// This is refering to my polygon class. the polygon object is in var poly
+    var poly = new polygon(8);
+    poly.alertFormula();
+    poly.alertSides();
+
+    var squares = new square(3);
+//Calls alert formula for square and parent polygon (polymorphism)    
+    squares.alertFormula();
+    squares.area();
 });
