@@ -45,7 +45,7 @@ function outputRes(htmlElement, theText){
 //Dice roll function for first die to generate random number between 1-6
 function rollDie(){
 //get random number between 0 - 1, multiply by 6
-var die = 6 + Math.random();
+var die = 6 * Math.random();
 //return die roll, making sure it is a whole number
 return Math.ceil(die);
 }
